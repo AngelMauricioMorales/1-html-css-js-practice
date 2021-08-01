@@ -1,0 +1,11 @@
+Maquetar un sitio web utilizando de base el diseño adjunto.
+
+No es necesario que las imágenes, texto o temática sea la misma, pero sí se debe respetar el layout del diseño. 
+La idea del ejercicio es, valga la redundancia, ejercitar la capacidad de observar o determinar un modelo de "cajas" para estructurar correctamente el html, facilitando la tarea para CSS.
+
+- El maquetado debe estar hecho con display: flex. Prohibidísimo usar float o inline-blocks para la distribución de elementos.
+- Coherente uso de unidades de medida (em, %, vh, vw).
+- El sitio debe ser responsive. Se debe ver bien en desktop y en mobile. Por cuestiones meramente relacionadas al hecho de ejercitar media queries, aplicar sólo un breakpoint (ancho máximo 600px)
+- No hace falta que tenga diferentes secciones. Con sólo el index.html es suficiente.
+- Además del sitio maquetado, se va a pedir una imagen donde se ilustre cómo se interpretó la estructura de "cajas" para armar el html.
+- Optimizar imágenes con Photoshop.
