@@ -216,27 +216,24 @@ button:hover {
 
 /*-----------------------------------------------------------------------------*/
 
-@media (min-width: 576px) {
+@media (min-width: 550px) {
   h2 {
     font-size: 2rem;
   }
 
-  button {
-    width: 8rem;
-  }
-
-  /*First Section (Header)*/
+/*Header (WAke Boarding)*/
   .header__title {
     font-size: 3rem;
+    padding: 5% 0;
   }
 
-  /*Fifth Section (News)*/
-  .news-section__items-title {
-    padding: 1.5%;
-    width: 5rem;
-  }
+/*First Section (Welcome)*/
+.welcome-section__text {
+  width: 50%;
+  margin: 5% auto;
+}
 
-  /*Footer*/
+/*Footer*/
   .footer__item-list {
     width: 15%;
   }
@@ -249,34 +246,24 @@ button:hover {
 
 /*----------------------------------------------------------------------------*/
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   /*Header (Wake Boarding)*/
   .header__title {
+    width: 45%;
     padding: 5% 0;
   }
 
   /*First Section (Welcome)*/
-  .welcome-section {
-    padding: 10% 0;
+  .welcome-section__text {
+   width: 50%;
+   margin: 5% auto;
   }
 }
 
 
 /*----------------------------------------------------------------------------*/
 
-@media (min-width: 992px) {
-  body {
-    font-size: 2em;
-  }
-
-  button {
-    width: 12rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
+@media (min-width: 910px) {
 /*Header (Wake Boarding)*/
   .header__title {
     font-size: 4rem;
@@ -287,17 +274,15 @@ button:hover {
   .welcome-section {
     padding: 10% 0;
   }
+}
 
-/*Third Section (Instructors)*/
-  .instructors-section__photo {
-    width: 25%;
+/*----------------------------------------------------------------------------*/
+
+@media (min-width: 1205px) {
+/*Header (Wake Boarding)*/
+  .header__title {
+    width: 30%;
   }
-
-/*Fifth Section (News)*/
-  .news-section__items-title {
-    width: 10%;
-  }
-
 }
 
 /*----------------------------------------------------------------------------*/
