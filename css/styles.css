@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+          box-sizing:content-box;
   text-align: center;
   color: white;
 }
@@ -17,8 +25,7 @@ h2 {
 button {
   background: rgba(0, 0, 0, 0.6);
   padding: 1%;
-  width: 160px;
-  width: 10rem;
+  width: 6rem;
 }
 
 button:hover {
@@ -55,14 +62,14 @@ button:hover {
   margin: 5% 0;
 }
 
-.header-arrow-background {
+.header__arrow--background {
   padding: 1%;
   text-align: right;
   border: 1px solid black;
   background: rgba(0, 0, 0, 0.6);
 }
 
-.header-arrow-background:hover {
+.header__arrow--background:hover {
   background-color: black;
 }
 
@@ -100,7 +107,7 @@ button:hover {
   background: url("../assets/about-background.jpg") center/cover no-repeat;
 }
 
-.events-background {
+.about-events--background {
   background: url("../assets/events-background.jpg") center/cover no-repeat;
 }
 
@@ -168,15 +175,15 @@ button:hover {
   padding: 1%;
 }
 
-.item-title-ruby {
+.news-section__items-title--ruby {
   background-color: rgb(165, 42, 73);
 }
 
-.item-title-orange {
+.news-section__items-title--orange {
   background-color: rgb(165, 122, 42);
 }
 
-.item-title-blue {
+.news-section__items-title--blue {
   background-color: rgb(100, 149, 237);
 }
 
@@ -209,43 +216,24 @@ button:hover {
 
 /*-----------------------------------------------------------------------------*/
 
-@media (min-width: 1024px) {
-  body {
+@media (min-width: 576px) {
+  h2 {
     font-size: 2rem;
   }
 
-  h2 {
-    font-size: 3.5rem;
-  }
-
   button {
-    width: 15rem;
+    width: 8rem;
   }
 
   /*First Section (Header)*/
   .header__title {
-    font-size: 5rem;
-    width: 35%;
-  }
-
-  /*Second Section (Welcome)*/
-  .welcome-section {
-    background-position-y: 75%;
-  }
-
-  /*Third Section (Instructors)*/
-  .instructors-section__photo {
-    width: 20%;
+    font-size: 3rem;
   }
 
   /*Fifth Section (News)*/
-  .news-section__list {
-    padding: 0;
-  }
-
   .news-section__items-title {
     padding: 1.5%;
-    width: 10rem;
+    width: 5rem;
   }
 
   /*Footer*/
@@ -261,23 +249,76 @@ button:hover {
 
 /*----------------------------------------------------------------------------*/
 
-@media (min-width: 1366px) {
+@media (min-width: 768px) {
+  /*Header (Wake Boarding)*/
+  .header__title {
+    padding: 5% 0;
+  }
+
+  /*First Section (Welcome)*/
+  .welcome-section {
+    padding: 10% 0;
+  }
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+@media (min-width: 992px) {
   body {
-    font-size: 1rem;
+    font-size: 2em;
+  }
+
+  button {
+    width: 12rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+/*Header (Wake Boarding)*/
+  .header__title {
+    font-size: 4rem;
+    padding: 5% 0;
+  }
+
+/*First Section (Welcome)*/
+  .welcome-section {
+    padding: 10% 0;
+  }
+
+/*Third Section (Instructors)*/
+  .instructors-section__photo {
+    width: 25%;
+  }
+
+/*Fifth Section (News)*/
+  .news-section__items-title {
+    width: 10%;
+  }
+
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 1.5em;
     margin: 0 5%;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   button {
-    width: 8rem;
+    width: 10rem;
   }
 
-  /*Header*/
+  /*Header (Wake Boarding)*/
   .header__title {
-    margin: 10% 0;
+    width: 25%;
   }
 
   .header__menu-button {
