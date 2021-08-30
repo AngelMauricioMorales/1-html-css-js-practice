@@ -216,7 +216,7 @@ button:hover {
 
 /*-----------------------------------------------------------------------------*/
 
-@media (min-width: 550px) {
+@media (min-width: 540px) {
   h2 {
     font-size: 2rem;
   }
@@ -264,6 +264,14 @@ button:hover {
 /*----------------------------------------------------------------------------*/
 
 @media (min-width: 910px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 10rem;
+  }
+
 /*Header (Wake Boarding)*/
   .header__title {
     font-size: 4rem;
