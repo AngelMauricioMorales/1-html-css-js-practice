@@ -1,380 +1,319 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 * {
-  -webkit-box-sizing:content-box;
-          box-sizing:content-box;
+  box-sizing: border-box;
   text-align: center;
   color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 body {
-  background-color: rgb(37, 37, 37);
+  background: rgb(25, 25, 25);
 }
 
-h2 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  margin: 0;
+hr {
+  display: none;
 }
 
-button {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 1%;
-  width: 6rem;
+.container {
+  min-width: 17.5rem;
 }
 
-button:hover {
-  background-color: black;
+.welcome-section__title,
+.about-events__title,
+.instructors-section__title {
+  font-size: 2rem;
 }
 
-/*Header (Wake Boarding)*/
+.instructors-section__text,
+.news-section__text,
+.about-events__text,
+.footer__text,
+.footer__last-div-text {
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+/*HEADER*/
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  background: url("../assets/header-image.jpg") 100%/100% no-repeat;
+  position: relative;
+  background: url("../assets/backgrounds/header-backgrounds-0.jpg") center/100% 100% no-repeat;
+  min-height: 13rem;
+  margin: auto;
+}
+
+.header__title span {
+  font-size: 4rem;
+  font-weight: normal;
 }
 
 .header__menu-button {
-  width: 100%;
-  text-align: start;
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  left: 0;
 }
 
-.header__title {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  text-align: center;
-  order: 2;
-  width: 50%;
-  margin: 5% 0;
+.header__arrow-link {
+  background: rgba(34, 34, 34, 0.7);
+  padding: 0.3rem;
+  border-radius: 2.5px;
 }
 
-.header__arrow--background {
-  padding: 1%;
-  text-align: right;
-  border: 1px solid black;
-  background: rgba(0, 0, 0, 0.6);
+.header__arrow-link:hover {
+  background: rgb(255, 255, 255);
+  color: black;
 }
 
-.header__arrow--background:hover {
-  background-color: black;
+.slider__arrow--left {
+  order: -1;
 }
 
-.header__left-arrow {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.header__right-arrow {
-  -webkit-box-ordinal-group: 4;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-/*First Section (Welcome)*/
+/*WELCOME*/
 .welcome-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: url("../assets/welcome-image.webp") center/cover no-repeat;
-  padding: 5%;
+  background: url("../assets/backgrounds/welcome-background.jpg") center / 100% 100% no-repeat;
+  padding: 2rem;
 }
 
-/*Second Section (About and Events)*/
-.about-events__article {
-  padding: 5% 0;
+/*ABOUT and EVENTS*/
+.about--background {
+  background: url("../assets/backgrounds/about-background.jpg") center / 100% 100% no-repeat;
+  padding: 2rem;
 }
 
-.about-background {
-  background: url("../assets/about-background.jpg") center/cover no-repeat;
+.events--background {
+  background: url("../assets/backgrounds/events-background.jpg") center / 100% 100% no-repeat;
+  padding: 2rem;
 }
 
-.about-events--background {
-  background: url("../assets/events-background.jpg") center/cover no-repeat;
+.about-events__button {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 1rem;
+  border: none;
 }
 
-/*Third Section (Instructors)*/
+.about-events__button:hover {
+  background: black;
+}
+
+/*INSTRUCTORS*/
 .instructors-section {
-  background: url("../assets/instructors-background.jpg") 0/100% 100% no-repeat;
-  padding: 5%;
+  background: url("../assets/backgrounds/instructors-background.jpg") left 60% center / 300% 100% no-repeat;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.instructors-section__subtitle--red {
+  color: rgb(196, 53, 53);
+}
+
+.instructors-section__subtitle--orange {
+  color: rgb(229, 146, 18);
+}
+
+.instructors-section__subtitle--blue {
+  color: rgb(33, 155, 202);
 }
 
 .instructors-section__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  justify-content: center;
 }
 
-.instructors-section__photo {
-  border-radius: 5%;
+.instructors-section__list-items {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
-.subtitle-red {
-  color: red;
+.instructors-section__figure {
+  order: -1;
+  margin: 1rem 0;
 }
 
-.subtitle-blue {
-  color: blue;
-}
-
-.subtitle-green {
-  color: green;
-}
-
-/*Fourth Section (Photos)*/
+/*PHOTOS*/
 .photos-section {
-  padding: 5% 0;
+  margin: 2rem 0;
 }
 
 .photos-section__imgs-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 5%;
+}
+
+.photos-section__text {
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .photos-section__images {
   width: 25%;
 }
 
-/*Fifth Section (News)*/
-.news-section {
-  background: url("../assets/news-background.jpg") 0/100% 100% no-repeat;
-  padding: 5%;
+.photos-section__button {
+  background: rgb(50, 50, 50);
+  padding: 0.3rem 2rem;
+  margin: 1rem;
+  border: none;
 }
 
-.news-section__list {
-  list-style: none;
-  padding: 0;
+.photos-section__button:hover {
+  background: black;
+}
+
+/*NEWS*/
+.news-section {
+  background: url("../assets/backgrounds/news-background.jpg") center / 100% 100% no-repeat;
+  padding: 2rem;
 }
 
 .news-section__items-title {
-  border-radius: 5%;
-  width: 80px;
-  width: 5rem;
-  margin: auto;
-  padding: 1%;
+  width: 40%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 2px;
 }
 
 .news-section__items-title--ruby {
-  background-color: rgb(165, 42, 73);
+  background: rgb(196, 53, 53);
 }
 
 .news-section__items-title--orange {
-  background-color: rgb(165, 122, 42);
+  background: rgb(229, 146, 18);
 }
 
 .news-section__items-title--blue {
-  background-color: rgb(100, 149, 237);
+  background: rgb(33, 155, 202);
+} 
+
+.news-section__list-item {
+  list-style: none;
+  padding: 0 1rem;
 }
 
-/*Footer*/
-.footer {
-  background: url("../assets/footer-background.jpg") 0 / cover no-repeat;
+.news-section__button {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.3rem 2rem;
+  border: none;
 }
 
+.news-section__button:hover {
+  background: black;
+}
+
+/*FOOTER*/
 .footer__address-container {
-  padding: 5%;
+  background: url("../assets/backgrounds/footer-background.jpg") center / 100% 100% no-repeat;
+  padding: 2rem 1rem;
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   list-style: none;
-  padding: 0;
+  margin: 0;
 }
 
 .footer__last-div {
-  background-color: rgb(37, 37, 37);
-  font-size: 8px;
-  font-size: 0.5rem;
-  padding: 3%;
+  margin: 3rem 0;
 }
 
-/*-----------------------------------------------------------------------------*/
-
-@media (min-width: 540px) {
-  h2 {
-    font-size: 2rem;
-  }
-
-/*Header (WAke Boarding)*/
+/*--------------------BREAKPOINT 400px--------------------*/
+@media (min-width: 400px) {
+  /*HEADER*/
   .header__title {
-    font-size: 3rem;
-    padding: 5% 0;
+    width: 40%;
   }
 
-/*First Section (Welcome)*/
-.welcome-section__text {
-  width: 50%;
-  margin: 5% auto;
-}
-
-/*Footer*/
-  .footer__item-list {
-    width: 15%;
-  }
-
-  .footer__facebook-logo,
-  .footer__twitter-logo {
-    width: 50%;
-  }
-}
-
-/*----------------------------------------------------------------------------*/
-
-@media (min-width: 820px) {
-  /*Header (Wake Boarding)*/
-  .header__title {
-    width: 45%;
-    padding: 5% 0;
-  }
-
-  /*First Section (Welcome)*/
+  /*WELCOME*/
   .welcome-section__text {
-   width: 50%;
-   margin: 5% auto;
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  /*NEWS*/
+  .news-section__items-title {
+    width: 20%;
   }
 }
 
+/*--------------------BREAKPOINT 900px--------------------*/
+@media (min-width: 900px) {
+  .header__title,
+  .welcome-section__title,
+  .about-events__title,
+  .instructors-section__title,
+  .photos-section__title,
+  .news-section__title {
+  font-size: 2.5rem;
+}
 
-/*----------------------------------------------------------------------------*/
-
-@media (min-width: 910px) {
-  body {
-    font-size: 1.5rem;
-  }
-
-  button {
-    width: 10rem;
-  }
-
-/*Header (Wake Boarding)*/
+  /*HEADER*/
   .header__title {
-    font-size: 4rem;
-    padding: 5% 0;
+    width: 20%;
+    margin: 10% 0;
   }
 
-/*First Section (Welcome)*/
+  .header__arrow-link {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  /*WELCOME*/
   .welcome-section {
-    padding: 10% 0;
+    padding: 5rem 0;
   }
-}
 
-/*----------------------------------------------------------------------------*/
+  /*ABOUT and EVENTS*/
+  .about-events-section {
+    display: flex;
+  }
 
-@media (min-width: 1205px) {
-/*Header (Wake Boarding)*/
-  .header__title {
+  .about-events__text {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  /*INSTRUCTORS*/
+  .instructors-section {
+    background: url("../assets/backgrounds/instructors-background.jpg") center / 100% 100% no-repeat;
+    /*No sé como hacer para mover el background hacia la izquierda.*/
+    padding: 2rem;
+  }
+
+  .instructors-section__list {
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 70%;
+  }
+
+  /*NEWS*/
+  .news-section__list {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+
+  .news-section__items-title {
+    width: 30%;
+  }
+
+  /*FOOTER*/
+  .footer__address,
+  .footer__text,
+  .footer__list {
     width: 30%;
   }
 }
 
-/*----------------------------------------------------------------------------*/
-
-@media (min-width: 1400px) {
-  body {
-    font-size: 1.5em;
-    margin: 0 5%;
+/*--------------------BREAKPOINT 1367px--------------------*/
+@media (min-width: 1367px) {
+  .container {
+    max-width: 64rem;
+    margin: auto;
   }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  button {
-    width: 10rem;
-  }
-
-  /*Header (Wake Boarding)*/
-  .header__title {
-    width: 25%;
-  }
-
-  .header__menu-button {
-    font-size: 2rem;
-  }
-
-  /*First Section (Welcome)*/
-  .welcome-section__text {
-    width: 50%;
-    margin: 5% auto;
-  }
-
-  /*Second Section (About and Events)*/
-  .about-events-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .about-events__article {
-    padding: 5%;
-  }
-
-  /*Third Section (Instructors)*/
-  .instructors-section__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .instructors-section__item-list {
-    width: 33%;
-  }
-
-  /*Fifth Section (News)*/
-  .news-section__items-title {
-    width: 5rem;
-    padding: 1%;
-  }
-
-  .news-section__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .news-section__list-item {
-    width: 33%;
-  }
-
-  /*Footer*/
-  .footer__address-container {
-    width: 33%;
-  }
-
-  .footer__facebook-logo,
-  .footer__twitter-logo {
-    width: 100%;
-  }
-}
+}  

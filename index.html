@@ -9,251 +9,270 @@
   </head>
   <body>
     <!--Wake Boarding-->
-    <header class="header">
-      <h1 class="header__title">WAKE BOARDING</h1>
-        <div class="header__menu-button">
-          <a href="#" class="header__menu-link"><b>MENU</b></a>
-        </div>
-        <div class="header__left-arrow header__arrow--background">
-          <a href="#" class="header__left-arrow-link"><b>&#60;</b></a>
-        </div>
-        <div class="header__right-arrow header__arrow--background">
-          <a href="#" class="header__right-arrow-link"><b>&#62;</b></a>
-        </div>
-    </header>
-    <main class="main">
-      <!--Welcome-->
-      <section class="welcome-section">
-        <h2 class="welcome-section__title">WELCOME!</h2>
-        <p class="welcome-section__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea
-          nostrum minima recusandae quod sequi nisi, expedita quia velit ipsam
-          tempora neque eum esse voluptates, ipsum non iste adipisci nemo.
-        </p>
-      </section>
-      <!--About and Events-->
-      <div class="about-events-section">
-        <article class="about-events__article about-background">
-          <h2 class="about-events__title">ABOUT</h2>
-          <h3 class="about-events__subtitle">
-            LOREM IPSUM DOLOR SIT AMET CONSECTECTUR.
-          </h3>
-          <p class="about-events__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            reprehenderit dolorem vitae sunt libero perspiciatis minus eius,
-            voluptas debitis tempore ex sequi, ullam odit repellat maiores modi
-            molestias sed perferendis.
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">
+          <span>Wake</span> Boarding
+        </h1>
+        <nav class="header__menu-button">
+          <a href="#" class="header__menu-link">Menu</a>
+        </nav>
+        <span class="slider__arrows slider__arrow--left">
+          <a href="#" class="header__arrow-link">&#60;</a>
+        </span>
+        <span class="slider__arrows slider__arrow--right">
+          <a href="#" class="header__arrow-link">&#62;</a>
+        </span>
+      </header>
+      <hr>
+      <main class="main">
+        <!--Welcome-->
+        <section class="welcome-section">
+          <header class="welcome-section__header">
+            <h2 class="welcome-section__title">
+              Welcome!
+            </h2>
+          </header>
+          <p class="welcome-section__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea
+              nostrum minima recusandae quod sequi nisi, expedita quia velit ipsam
+              tempora neque eum esse voluptates, ipsum non iste adipisci nemo.
           </p>
-          <h4 class="about-events__sub-subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h4>
-          <p class="about-events__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            reprehenderit delectus quam quia modi laudantium. Blanditiis fuga
-            perspiciatis ad reiciendis, fugiat quaerat quibusdam sint deserunt,
-            sequi, facere dolorum odit tenetur!
+        </section>
+        <hr>
+        <!--About and Events-->
+        <section class="about-events-section">
+          <!--ABOUT-->
+          <article class="about-events__article about--background">
+            <header class="about-events-section__header">
+              <h2 class="about-events__title">
+                About
+              </h2>
+            </header>
+            <h3 class="about-events__subtitle">
+              Lorem ipsum dolor sit amet consectetur.
+            </h3>
+            <p class="about-events__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              reprehenderit dolorem vitae sunt libero perspiciatis minus eius,
+              voluptas debitis tempore ex sequi, ullam odit repellat maiores modi
+              molestias sed perferendis.
+            </p>
+            <h4 class="about-events__sub-subtitle">
+              Excepteur sinc Occaecat
+            </h4>
+            <p class="about-events__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              reprehenderit delectus quam quia modi laudantium. Blanditiis fuga
+              perspiciatis ad reiciendis, fugiat quaerat quibusdam sint deserunt,
+              sequi, facere dolorum odit tenetur!
+            </p>
+            <button name="read" type="button" class="about-events__button">
+              READ MORE
+            </button>
+          </article>
+          <!--EVENTS-->
+          <article class="about-events__article events--background">
+            <header class="about-events-section__header">
+              <h2 class="about-events__title">
+                Events
+              </h2>
+            </header>
+            <h3 class="about-events__subtitle">
+              Lorem ipsum dolor sit amet consectetur.
+            </h3>
+            <p class="about-events__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              reprehenderit dolorem vitae sunt libero perspiciatis minus eius,
+              voluptas debitis tempore ex sequi, ullam odit repellat maiores modi
+              molestias sed perferendis.
+            </p>
+            <h4 class="about-events__sub-subtitle">
+              Excepteur sinc Occaecat
+            </h4>
+            <p class="about-events__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              reprehenderit delectus quam quia modi laudantium. Blanditiis fuga
+              perspiciatis ad reiciendis, fugiat quaerat quibusdam sint deserunt,
+              sequi, facere dolorum odit tenetur!
+            </p>
+            <button name="read" type="button" class="about-events__button">
+              READ MORE
+            </button>
+          </article>
+        </section>
+        <hr>
+        <!--Instructors-->
+        <section class="instructors-section">
+          <header class="instructors-section__header">
+            <h2 class="instructors-section__title">
+              Instructors
+            </h2>
+          </header>
+          <ul class="instructors-section__list">
+            <li class="instructors-section__list-items">
+              <h3 class="instructors-section__subtitle instructors-section__subtitle--red">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <figure class="instructors-section__figure">
+                <img
+                  class="instructors-section__photo"
+                  src="assets/imgs/quico.jpg"
+                  alt="Instructor 1"
+                />
+              </figure>
+              <p class="instructors-section__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                atque. Ut, ex tempora repellendus esse veritatis repudiandae.
+              </p>
+            </li>
+            <li class="instructors-section__list-items">
+              <h3 class="instructors-section__subtitle instructors-section__subtitle--orange">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <figure class="instructors-section__figure">
+                <img
+                  class="instructors-section__photo"
+                  src="assets/imgs/quico.jpg"
+                  alt="Instructor 2"
+                />
+              </figure>
+              <p class="instructors-section__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                atque. Ut, ex tempora repellendus esse veritatis repudiandae.
+              </p>
+            </li>
+            <li class="instructors-section__list-items">
+              <h3 class="instructors-section__subtitle instructors-section__subtitle--blue">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <figure class="instructors-section__figure">
+                <img
+                  class="instructors-section__photo"
+                  src="assets/imgs/quico.jpg"
+                  alt="Instructor 3"
+                />
+              </figure>
+              <p class="instructors-section__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                atque. Ut, ex tempora repellendus esse veritatis repudiandae.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <hr>
+        <!--Photos-->
+        <section class="photos-section">
+          <header class="photos-section__header">
+            <h2 class="photos-section__title">Photos</h2>
+          </header>
+          <p class="photos-section__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum delectus quidem eaque neque minus veritatis fugit quam quae voluptatibus.
           </p>
-          <button name="read" type="button" class="about-events__button">
-            <b>READ MORE</b>
+          <figure class="photos-section__imgs-container">
+            <img src="assets/imgs/1-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/2-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/3-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/4-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/5-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/6-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/7-photo.jpg" alt="" class="photos-section__images"/>
+            <img src="assets/imgs/8-photo.jpg" alt="" class="photos-section__images"/>
+          </figure>
+          <button name="seeall" type="button" class="photos-section__button">
+            SEE ALL
           </button>
-        </article>
-        <article class="about-events__article about-events--background">
-          <h2 class="about-events__title">EVENTS</h2>
-          <h3 class="about-events__subtitle">
-            LOREM IPSUM DOLOR SIT AMET CONSECTECTUR.
-          </h3>
-          <p class="about-events__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            reprehenderit dolorem vitae sunt libero perspiciatis minus eius,
-            voluptas debitis tempore ex sequi, ullam odit repellat maiores modi
-            molestias sed perferendis.
-          </p>
-          <h4 class="about-events__sub-subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h4>
-          <p class="about-events__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            reprehenderit delectus quam quia modi laudantium. Blanditiis fuga
-            perspiciatis ad reiciendis, fugiat quaerat quibusdam sint deserunt,
-            sequi, facere dolorum odit tenetur!
-          </p>
-          <button name="read" type="button" class="about-events__button">
-            <b>READ MORE</b>
+        </section>
+        <hr>
+        <!--News-->
+        <section class="news-section">
+          <header class="news-section__header">
+            <h2 class="news-section__title">NEWS</h2>
+          </header>
+          <ul class="news-section__list">
+            <li class="news-section__list-item">
+              <h3 class="news-section__items-title news-section__items-title--ruby">25/06</h3>
+              <h4 class="news-section__list-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quis ullam doloribus, placeat, voluptates excepturi.
+              </h4>
+              <p class="news-section__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae quis ipsa eius, amet error recusandae nemo earum neque
+                placeat maxime est vitae sapiente mollitia autem! Illo repellendus
+                animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </li>
+            <li class="news-section__list-item">
+              <h3 class="news-section__items-title news-section__items-title--orange">25/06</h3>
+              <h4 class="news-section__list-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quis ullam doloribus, placeat, voluptates excepturi.
+              </h4>
+              <p class="news-section__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae quis ipsa eius, amet error recusandae nemo earum neque
+                placeat maxime est vitae sapiente mollitia autem! Illo repellendus
+                animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </li>
+            <li class="news-section__list-item">
+              <h3 class="news-section__items-title news-section__items-title--blue">25/06</h3>
+              <h4 class="news-section__list-subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quis ullam doloribus, placeat, voluptates excepturi.
+              </h4>
+              <p class="news-section__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae quis ipsa eius, amet error recusandae nemo earum neque
+                placeat maxime est vitae sapiente mollitia autem! Illo repellendus
+                animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </li>
+          </ul>
+          <button name="seeAll" type="button" class="news-section__button">
+            SEE ALL
           </button>
-        </article>
-      </div>
-      <!--Instructors-->
-      <section class="instructors-section">
-        <h2 class="instructors-section__title">INSTRUCTORS</h2>
-        <ul class="instructors-section__list">
-          <li class="instructors-section__item-list">
-            <h3 class="instructors-section__subtitle subtitle-red">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h3>
-            <figure>
-              <img
-                class="instructors-section__photo"
-                src="assets/quico.jpg"
-                alt="Instructor 1"
-              />
-            </figure>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              atque. Ut, ex tempora repellendus esse veritatis repudiandae
-              assumenda eveniet vero architecto amet, quae et aut laboriosam qui
-              sint? Nulla, modi?
-            </p>
-          </li>
-          <li class="instructors-section__item-list">
-            <h3 class="instructors-section__subtitle subtitle-blue">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h3>
-            <figure>
-              <img
-                class="instructors-section__photo"
-                src="assets/quico.jpg"
-                alt="Instructor 2"
-              />
-            </figure>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              atque. Ut, ex tempora repellendus esse veritatis repudiandae
-              assumenda eveniet vero architecto amet, quae et aut laboriosam qui
-              sint? Nulla, modi?
-            </p>
-          </li>
-          <li class="instructors-section__item-list">
-            <h3 class="instructors-section__subtitle subtitle-green">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h3>
-            <figure>
-              <img
-                class="instructors-section__photo"
-                src="assets/quico.jpg"
-                alt="Instructor 3"
-              />
-            </figure>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              atque. Ut, ex tempora repellendus esse veritatis repudiandae
-              assumenda eveniet vero architecto amet, quae et aut laboriosam qui
-              sint? Nulla, modi?
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!--Photos-->
-      <section class="photos-section">
-        <h2 class="photos-section__title">PHOTOS</h2>
-        <p class="photos-section__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui
-          accusamus officia.
-        </p>
-        <figure class="photos-section__imgs-container">
-          <img src="assets/1-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/2-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/3-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/4-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/5-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/6-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/7-photo.jpg" alt="" class="photos-section__images" />
-          <img src="assets/8-photo.jpg" alt="" class="photos-section__images" />
-        </figure>
-        <button name="seeall" type="button" class="photos-section__button">
-          <b>SEE ALL</b>
-        </button>
-      </section>
-      <!--News-->
-      <section class="news-section">
-        <h2 class="news-section__title">NEWS</h2>
-        <ul class="news-section__list">
-          <li class="news-section__list-item">
-            <h3 class="news-section__items-title news-section__items-title--ruby">25/06</h3>
-            <h4 class="news-section__list-subtitle">
-              LOREM IPSUM DOLOR SIT AMET, CONSECTECTUR ADIPISICING ELIT. EX,
-              SUSCIPIT PORRO EXPLICABO A VELIT BEATE QUAERAT LAUDANTIUM.
-            </h4>
-            <p class="news-section__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae quis ipsa eius, amet error recusandae nemo earum neque
-              placeat maxime est vitae sapiente mollitia autem! Illo repellendus
-              animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Distinctio delectus alias eveniet, ad modi asperiores vero
-              vel sit saepe nostrum commodi doloremque, nesciunt optio
-              recusandae architecto? Deserunt reiciendis ipsa laboriosam?
-            </p>
-          </li>
-          <li class="news-section__list-item">
-            <h3 class="news-section__items-title news-section__items-title--orange">25/06</h3>
-            <h4 class="news-section__list-subtitle">
-              LOREM IPSUM DOLOR SIT AMET, CONSECTECTUR ADIPISICING ELIT. EX,
-              SUSCIPIT PORRO EXPLICABO A VELIT BEATE QUAERAT LAUDANTIUM.
-            </h4>
-            <p class="news-section__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae quis ipsa eius, amet error recusandae nemo earum neque
-              placeat maxime est vitae sapiente mollitia autem! Illo repellendus
-              animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Distinctio delectus alias eveniet, ad modi asperiores vero
-              vel sit saepe nostrum commodi doloremque, nesciunt optio
-              recusandae architecto? Deserunt reiciendis ipsa laboriosam?
-            </p>
-          </li>
-          <li class="news-section__list-item">
-            <h3 class="news-section__items-title news-section__items-title--blue">25/06</h3>
-            <h4 class="news-section__list-subtitle">
-              LOREM IPSUM DOLOR SIT AMET, CONSECTECTUR ADIPISICING ELIT. EX,
-              SUSCIPIT PORRO EXPLICABO A VELIT BEATE QUAERAT LAUDANTIUM.
-            </h4>
-            <p class="news-section__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae quis ipsa eius, amet error recusandae nemo earum neque
-              placeat maxime est vitae sapiente mollitia autem! Illo repellendus
-              animi rerum at! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Distinctio delectus alias eveniet, ad modi asperiores vero
-              vel sit saepe nostrum commodi doloremque, nesciunt optio
-              recusandae architecto? Deserunt reiciendis ipsa laboriosam?
-            </p>
-          </li>
-        </ul>
-        <button name="seeAll" type="button" class="news-section__button">
-          <b>SEE ALL</b>
-        </button>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer__address-container">
-        <address class="footer__address">
-          ADDRESS: 4578 MAR-MORA ROAD, GLASGLOW D0489GR.
-        </address>
-        <p class="footer__text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde maxime
-          ut accusantium nobis! Nostrum laudantium eius saepe veritatis quis non
-          porro pariatur, illum dolore voluptatem quibusdam, quam modi animi.
-        </p>
-        <ul class="footer__list">
-          <li class="footer__item-list">
-            <a href="#"
-              ><img
-                src="assets/facebook.png"
-                alt="facebook logo"
-                class="footer__facebook-logo"
-            /></a>
-          </li>
-          <li class="footer__item-list">
-            <a href="#"
-              ><img
-                src="assets/twitter.png"
-                alt="twitter"
-                class="footer__twitter-logo"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__last-div">
-        <p class="footer__last-div-text">Lorem ipsum / sit amet.</p>
-      </div>
-    </footer>
+        </section>
+      </main>
+      <hr>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer__address-container">
+          <address class="footer__address">
+            Address: 4578 Mar-Mora Road, Glasglow D0489GR.
+          </address>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde maxime
+            ut accusantium nobis! Nostrum laudantium eius saepe veritatis quis non.
+          </p>
+          <ul class="footer__list">
+            <li class="footer__list-items">
+              <a href="#">
+                <img
+                  src="assets/iconos/facebook.png"
+                  alt="facebook logo"
+                  class="footer__facebook-logo"
+                />
+              </a>
+            </li>
+            <li class="footer__list-items">
+              <a href="#">
+                <img
+                  src="assets/iconos/twitter.png"
+                  alt="twitter"
+                  class="footer__twitter-logo"
+                  />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__last-div">
+          <p class="footer__last-div-text">
+            Lorem ipsum / sit amet.
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
