@@ -2,12 +2,7 @@
   box-sizing: border-box;
   text-align: center;
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
-}
-
-body {
-  background: rgb(25, 25, 25);
 }
 
 hr {
@@ -15,6 +10,7 @@ hr {
 }
 
 .container {
+  background: rgb(25, 25, 25);
   min-width: 17.5rem;
 }
 
@@ -22,15 +18,6 @@ hr {
 .about-events__title,
 .instructors-section__title {
   font-size: 2rem;
-}
-
-.instructors-section__text,
-.news-section__text,
-.about-events__text,
-.footer__text,
-.footer__last-div-text {
-  text-transform: lowercase;
-  font-weight: normal;
 }
 
 /*HEADER*/
@@ -51,7 +38,7 @@ hr {
 
 .header__menu-button {
   position: absolute;
-  font-weight: 900;
+  font-weight: bolder;
   top: 0;
   left: 0;
 }
@@ -77,6 +64,10 @@ hr {
   padding: 2rem;
 }
 
+.welcome-section__text {
+  font-size: 0.6rem;
+}
+
 /*ABOUT and EVENTS*/
 .about--background {
   background: url("../assets/backgrounds/about-background.jpg") center / 100% 100% no-repeat;
@@ -88,10 +79,19 @@ hr {
   padding: 2rem;
 }
 
+.about-events__title {
+  margin: 1rem 0;
+}
+
+.about-events__text {
+  font-size: 0.5rem;
+}
+
 .about-events__button {
   background: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 1rem;
   border: none;
+  font-weight: bolder;
 }
 
 .about-events__button:hover {
@@ -103,6 +103,7 @@ hr {
   background: url("../assets/backgrounds/instructors-background.jpg") left 60% center / 300% 100% no-repeat;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-size: 0.6rem;
 }
 
 .instructors-section__subtitle--red {
@@ -156,9 +157,10 @@ hr {
 
 .photos-section__button {
   background: rgb(50, 50, 50);
-  padding: 0.3rem 2rem;
+  padding: 0.5rem 2rem;
   margin: 1rem;
   border: none;
+  font-weight: bolder;
 }
 
 .photos-section__button:hover {
@@ -195,10 +197,15 @@ hr {
   padding: 0 1rem;
 }
 
+.news-section__text {
+  font-size: 0.5rem;
+}
+
 .news-section__button {
   background: rgba(0, 0, 0, 0.8);
-  padding: 0.3rem 2rem;
+  padding: 0.5rem 2rem;
   border: none;
+  font-weight: bolder;
 }
 
 .news-section__button:hover {
@@ -218,12 +225,17 @@ hr {
   margin: 0;
 }
 
+.footer__last-div,
+.footer__text {
+  font-size: 0.5rem;
+}
+
 .footer__last-div {
-  margin: 3rem 0;
+  padding: 3rem 0;
 }
 
 /*--------------------BREAKPOINT 400px--------------------*/
-@media (min-width: 400px) {
+@media (min-width: 399px) {
   /*HEADER*/
   .header__title {
     width: 40%;
@@ -243,19 +255,24 @@ hr {
 
 /*--------------------BREAKPOINT 900px--------------------*/
 @media (min-width: 900px) {
-  .header__title,
   .welcome-section__title,
   .about-events__title,
   .instructors-section__title,
   .photos-section__title,
   .news-section__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
   /*HEADER*/
   .header__title {
-    width: 20%;
-    margin: 10% 0;
+    line-height: 60px;
+    margin: 20% 0;
+    width: 50%;
+    font-size: 5rem;
+  }
+
+  .header__title span {
+    font-size: 10rem;
   }
 
   .header__arrow-link {
@@ -266,6 +283,11 @@ hr {
   /*WELCOME*/
   .welcome-section {
     padding: 5rem 0;
+  }
+
+  .welcome-section__text {
+    width: 60%;
+    line-height: 20px;
   }
 
   /*ABOUT and EVENTS*/
@@ -291,22 +313,36 @@ hr {
     width: 70%;
   }
 
+  /*PHOTOS*/
+.photos-section {
+  padding: 5% 0;
+}
+
+  .photos-section__text {
+    width: 60%;
+  }
+
   /*NEWS*/
   .news-section__list {
     display: flex;
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 2rem auto;
   }
 
   .news-section__items-title {
-    width: 30%;
+    width: 40%;
   }
 
   /*FOOTER*/
   .footer__address,
   .footer__text,
   .footer__list {
-    width: 30%;
+    width: 20%;
+    margin: 0 20%;
+  }
+
+  .footer__address-container {
+    padding: 5% 0;
   }
 }
 
